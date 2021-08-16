@@ -6,3 +6,84 @@
 - Using CSS resets is necessary.
 - Use semantic tags and keep the nesting and indentation proper. 
 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Dashboard</title>
+  <link rel="stylesheet" href="assets/stylesheet/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container flex-container">
+      <a href="#" class="brand">
+        <img src="assets/media/altcampus-logo.svg" alt="altcampus logo" class="brand-image">
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav-item">
+          <img src="assets/media/icons/bell.svg" alt="bell" class="item-icon">
+        </a>
+        <a href="#" class="nav-item">
+          <div class="flex-container-item">
+            <p class="admin-text">sarah jone</p>
+            <img src="assets/media/icons/user.svg" alt="user image" class="item-icon">
+          </div>
+          </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="content container flex-container">
+      <aside class="aside flex-column">
+        <nav class="aside-nav">
+          <header class="aside-header flex-container">
+            <img src="assets/media/icons/dashboard.svg" alt="dashboard icon" class="aside-header-icon">
+            <h3 class="heading aside-nav-text">dashboard</h3>
+          </header>
+          <a href="#" class="aside-nav-item flex-container active">
+            <img src="assets/media/icons/article.svg" alt="article-icon">
+            <p class="aside-nav-text">articles</p>
+          </a>
+          <a href="#" class="aside-nav-item flex-container">
+            <img src="assets/media/icons/analytics.svg" alt="article-icon">
+            <p class="aside-nav-text">analytics</p>
+          </a>
+          <a href="#" class="aside-nav-item flex-container">
+            <img src="assets/media/icons/inbox.svg" alt="article-icon">
+            <p class="aside-nav-text">inbox</p>
+          </a>
+          <a href="#" class="aside-nav-item flex-container">
+            <img src="assets/media/icons/setting.svg" alt="article-icon">
+            <p class="aside-nav-text">settings</p>
+          </a>
+        </nav>
+        <button class="btn btn-logout flex-container">
+          <img src="assets/media/icons/log-out.svg" alt="logout button">
+          <p class="aside-nav-text">Logout</p>
+        </button>
+      </aside>
+      <section class="content-section">
+        <img src="assets/media/01.png" alt="graffiti" class="content-image">
+        <h2 class="article-heading">Why are we doing AltCampus?</h2>
+        <p class="article-text">AltCampus is an alternative to college that you wish existed. Currently, we are offering an in-house, 6-month long program to train people in quality software development, where they don't have to pay anything until they are hired.</p>
+        <p class="article-text">We live in the world of digital skills. These skills are always evolving and so is their demand. Students/Professionals who are not responsive to the changes in industry demands, in terms of skills, will have a hard time surviving, well at least flourishing.</p>
+        <button class="btn-article">read more</button>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container flex-container">
+      <p class="footer-text"><small>&copy</small> AltCampus</p>
+      <nav class="footer-nav">
+        <a href="#" class="footer-nav-item"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="footer-nav-item"><i class="fab fa-twitter"></i></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
